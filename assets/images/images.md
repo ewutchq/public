@@ -2,7 +2,7 @@
 
 ## Folder: [assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]](/assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]/)
 
-This folder contains logo assets in multiple sizes and formats for branding and app icons.
+This folder contains logo assets in multiple sizes and formats.
 
 | Asset | Preview | Size | Format | Public Link | Local Link |
 |---|---|---:|---|---|---|
@@ -68,9 +68,8 @@ This folder contains logo assets in multiple sizes and formats for branding and 
 
 ## Folder: [assets/images/internal/graphics/ui](/assets/images/internal/graphics/ui/)
 
-This folder contains UI-related graphics, including banners and other interface assets.
+This folder contains UI-related graphics, and other interface assets.
 
 | Asset | Preview | Size | Format | Public Link | Local Link |
 |---|---|---:|---|---|---|
-| GitHub Header Banner | <img src="https://github.com/user-attachments/assets/2eb8dedd-8875-45be-aaba-69b6454c4216" alt="github-header-banner-org.png" style="height: 48px; width: auto;"> | 1700×460 | PNG | [https://github.com/user-attachments/assets/2eb8dedd-8875-45be-aaba-69b6454c4216](https://github.com/user-attachments/assets/2eb8dedd-8875-45be-aaba-69b6454c4216) | [github-header-banner-org.png](/assets/images/internal/graphics/ui/github-header-banner-org.png) |
-
+| GitHub Header Banner | <img src="https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7" alt="github-header-banner-org.png" style="height: 48px; width: auto;"> | 1700×460 | PNG | [https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7](https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7) | [github-header-banner-org.png](/assets/images/internal/graphics/ui/github-header-banner-org.png) |
