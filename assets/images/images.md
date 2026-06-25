@@ -68,7 +68,7 @@ This folder contains logo assets in multiple sizes and formats.
 
 ## Folder: [assets/images/internal/graphics/ui](/assets/images/internal/graphics/ui/)
 
-This folder contains UI-related graphics, including banners and other interface assets.
+This folder contains UI-related graphics, and other interface assets.
 
 | Asset | Preview | Size | Format | Public Link | Local Link |
 |---|---|---:|---|---|---|
