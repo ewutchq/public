@@ -66,10 +66,19 @@ This folder contains logo assets in multiple sizes and formats.
 | Logo EWUTC | N/A | 16×16, 32×32, 48×48, 64×64, 128×128 | ICO | N/A | [logo-ewutc-[16x16,32x32,48x48,64x64,128x128].ico](/assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]/logo-ewutc-[16x16,32x32,48x48,64x64,128x128].ico) |
 | Logo EWUTC | N/A | 16×16 | ICO | N/A | [logo-ewutc-[16x16].ico](/assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]/logo-ewutc-[16x16].ico) |
 
-## Folder: [assets/images/internal/graphics/ui](/assets/images/internal/graphics/ui/)
+## Folder: [assets/images/internal/graphics/ui/elements](/assets/images/internal/graphics/ui/elements/)
 
-This folder contains UI-related graphics, and other interface assets.
+This folder contains UI elements and layouts.
 
 | Asset | Preview | Size | Format | Public Link | Local Link |
 |---|---|---:|---|---|---|
 | GitHub Header Banner | <img src="https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7" alt="github-header-banner-org.png" style="height: 48px; width: auto;"> | 1700×460 | PNG | [https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7](https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7) | [github-header-banner-org.png](/assets/images/internal/graphics/ui/elements/github-header-banner-org.png) |
+
+## Folder: [assets/images/internal/graphics/ui/icons](/assets/images/internal/graphics/ui/icons/)
+
+This folder contains UI icons and avatars.
+
+| Asset | Preview | Size | Format | Public Link | Local Link |
+|---|---|---:|---|---|---|
+| Icon Avatar Male | <img src="https://github.com/user-attachments/assets/720d6f28-3600-431d-96f3-c18f4eeaa00a" alt="icon-avatar-male.jpg" style="height: 48px; width: auto;"> | 1080×1080 | JPG | [https://github.com/user-attachments/assets/720d6f28-3600-431d-96f3-c18f4eeaa00a](https://github.com/user-attachments/assets/720d6f28-3600-431d-96f3-c18f4eeaa00a) | [icon-avatar-male.jpg](/assets/images/internal/graphics/ui/icons/icon-avatar-male.jpg) |
+| Icon Avatar Female | <img src="https://github.com/user-attachments/assets/e76d39c1-0d89-4301-8660-d0683e6a881e" alt="icon-avatar-female.jpg" style="height: 48px; width: auto;"> | 1080×1080 | JPG | [https://github.com/user-attachments/assets/e76d39c1-0d89-4301-8660-d0683e6a881e](https://github.com/user-attachments/assets/e76d39c1-0d89-4301-8660-d0683e6a881e) | [icon-avatar-female.jpg](/assets/images/internal/graphics/ui/icons/icon-avatar-female.jpg) |

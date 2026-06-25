@@ -18,7 +18,8 @@ EWUTC is dedicated to:
 
 - Browse the image collection: [Images Index](/assets/images/images.md)
 - Open the logo assets folder: [Logo assets](/assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]/)
-- Browse the UI graphics assets: [UI Assets](/assets/images/internal/graphics/ui/)
+- Browse the UI elements: [UI Elements](/assets/images/internal/graphics/ui/elements/)
+- Browse the UI icons: [UI Icons](/assets/images/internal/graphics/ui/icons/)
 - View the assets directory: [Assets](/assets/images/)
 
 ## Notes
