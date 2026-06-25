@@ -76,9 +76,14 @@ This folder contains UI elements and layouts.
 
 ## Folder: [assets/images/internal/graphics/ui/icons](/assets/images/internal/graphics/ui/icons/)
 
-This folder contains UI icons and avatars.
+This folder contains UI icons.
 
 | Asset | Preview | Size | Format | Public Link | Local Link |
 |---|---|---:|---|---|---|
 | Icon Avatar Male | <img src="https://github.com/user-attachments/assets/720d6f28-3600-431d-96f3-c18f4eeaa00a" alt="icon-avatar-male.jpg" style="height: 48px; width: auto;"> | 1080×1080 | JPG | [https://github.com/user-attachments/assets/720d6f28-3600-431d-96f3-c18f4eeaa00a](https://github.com/user-attachments/assets/720d6f28-3600-431d-96f3-c18f4eeaa00a) | [icon-avatar-male.jpg](/assets/images/internal/graphics/ui/icons/icon-avatar-male.jpg) |
 | Icon Avatar Female | <img src="https://github.com/user-attachments/assets/e76d39c1-0d89-4301-8660-d0683e6a881e" alt="icon-avatar-female.jpg" style="height: 48px; width: auto;"> | 1080×1080 | JPG | [https://github.com/user-attachments/assets/e76d39c1-0d89-4301-8660-d0683e6a881e](https://github.com/user-attachments/assets/e76d39c1-0d89-4301-8660-d0683e6a881e) | [icon-avatar-female.jpg](/assets/images/internal/graphics/ui/icons/icon-avatar-female.jpg) |
+| Icon Globe Tiny | <img src="https://github.com/user-attachments/assets/b622ae9f-c216-4745-bf76-ab94f1fc7c69" alt="icon-globe-tiny.png" style="height: 48px; width: auto;"> | 16×16 | PNG | https://github.com/user-attachments/assets/b622ae9f-c216-4745-bf76-ab94f1fc7c69 | [icon-globe-tiny.png](/assets/images/internal/graphics/ui/icons/icon-globe-tiny.png) |
+| Icon LinkedIn Logo Tiny | <img src="https://github.com/user-attachments/assets/0df63e9c-8543-4ab4-89e4-01bbb806357e" alt="icon-in-logo-tiny.png" style="height: 48px; width: auto;"> | 256×256 | PNG | https://github.com/user-attachments/assets/0df63e9c-8543-4ab4-89e4-01bbb806357e | [icon-in-logo-tiny.png](/assets/images/internal/graphics/ui/icons/icon-in-logo-tiny.png) |
+| Icon Facebook Logo Tiny | <img src="https://github.com/user-attachments/assets/688d9d32-d8c1-44a4-b5a2-3cae2bf29ae7" alt="icon-fb-logo-tiny.png" style="height: 48px; width: auto;"> | 24×24 | PNG | https://github.com/user-attachments/assets/688d9d32-d8c1-44a4-b5a2-3cae2bf29ae7 | [icon-fb-logo-tiny.png](/assets/images/internal/graphics/ui/icons/icon-fb-logo-tiny.png) |
+| Icon Envelope Tiny | <img src="https://github.com/user-attachments/assets/04b0bc04-cbe7-45f7-9fd5-8701d227671d" alt="icon-envelope-tiny.png" style="height: 48px; width: auto;"> | 16×16 | PNG | https://github.com/user-attachments/assets/04b0bc04-cbe7-45f7-9fd5-8701d227671d | [icon-envelope-tiny.png](/assets/images/internal/graphics/ui/icons/icon-envelope-tiny.png) |
+
