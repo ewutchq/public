@@ -255,9 +255,11 @@ cmd_process() {
     cd "$WORK_DIR"
     _require_process_deps
 
-    # Associative maps: dimension → final_name, pixel-hash → final_name
-    declare -A seen_dim
-    declare -A seen_hash
+    # Associative maps for single-frame assets and multi-frame bundles.
+    declare -A seen_single_dim
+    declare -A seen_single_hash
+    declare -A seen_container_sig
+    declare -A seen_container_hash
 
     # Temp file collecting one JSON object per asset (joined at the end).
     # Created in CWD so it lives on the same filesystem as the images,
@@ -344,8 +346,8 @@ cmd_process() {
             output="${OUT_PREFIX}-[${dim}].${ext}"
 
             # — duplicate by pixel content —
-            if [[ -n "${seen_hash[$hash]:-}" ]]; then
-                local survivor="${seen_hash[$hash]}"
+            if [[ -n "${seen_single_hash[$hash]:-}" ]]; then
+                local survivor="${seen_single_hash[$hash]}"
                 warn "Duplicate content → deleted: $f  (kept: $survivor)"
                 py_delete "$f"
                 dup_hash=$((dup_hash + 1))
@@ -358,8 +360,8 @@ cmd_process() {
             fi
 
             # — duplicate by pixel dimension —
-            if [[ -n "${seen_dim[$dim]:-}" ]]; then
-                local survivor="${seen_dim[$dim]}"
+            if [[ -n "${seen_single_dim[$dim]:-}" ]]; then
+                local survivor="${seen_single_dim[$dim]}"
                 warn "Duplicate dimension → deleted: $f  (kept: $survivor)"
                 py_delete "$f"
                 dup_dim=$((dup_dim + 1))
@@ -373,8 +375,8 @@ cmd_process() {
 
             py_rename "$f" "$output"
 
-            seen_dim["$dim"]="$output"
-            seen_hash["$hash"]="$output"
+            seen_single_dim["$dim"]="$output"
+            seen_single_hash["$hash"]="$output"
             renamed=$((renamed + 1))
             total=$((total + 1))
             ok "Renamed: $f  →  $output"
@@ -429,10 +431,11 @@ cmd_process() {
 
         skipped=$((skipped + frame_invalid))
 
-        # Sorted unique size list for the output filename.
-        local sizelist
+        # Sorted unique size list for the output filename and duplicate matching.
+        local sizelist size_sig
         sizelist=$(printf '%s\n' "${frame_dims[@]}" \
                    | sort -u -t x -k1,1n -k2,2n | paste -sd',')
+        size_sig="$sizelist"
 
         # Hash the raw file bytes — two byte-identical bundles are true dups.
         local filehash
@@ -459,9 +462,28 @@ cmd_process() {
         local output="${OUT_PREFIX}-[${sizelist}].${ext}"
 
         # — duplicate bundle —
-        if [[ -n "${seen_hash[$filehash]:-}" ]]; then
-            local survivor="${seen_hash[$filehash]}"
+        if [[ -n "${seen_container_hash[$filehash]:-}" ]]; then
+            local survivor="${seen_container_hash[$filehash]}"
             warn "Duplicate bundle → deleted: $f  (kept: $survivor)"
+            py_delete "$f"
+            dup_hash=$((dup_hash + 1))
+            deleted=$((deleted + 1))
+            for i in "${!frame_idxs[@]}"; do
+                local idx="${frame_idxs[$i]}"
+                local dim="${frame_dims[$i]}"
+                local fmt="${frame_fmts[$i]}"
+                local w="${dim%x*}" h="${dim#*x}"
+                total=$((total + 1))
+                py_json_asset "$f" "" "$survivor" \
+                    "deleted" "duplicate_content" \
+                    "$filehash" "$w" "$h" "$dim" "$fmt" "$idx" "$nframes" >> "$tmp"
+            done
+            continue
+        fi
+
+        if [[ -n "${seen_container_sig[$size_sig]:-}" ]]; then
+            local survivor="${seen_container_sig[$size_sig]}"
+            warn "Duplicate container sizes → deleted: $f  (kept: $survivor)"
             py_delete "$f"
             dup_hash=$((dup_hash + 1))
             deleted=$((deleted + 1))
@@ -481,10 +503,8 @@ cmd_process() {
         # — unique bundle: rename in-place —
         py_rename "$f" "$output"
 
-        seen_hash["$filehash"]="$output"
-        for d in "${frame_dims[@]}"; do
-            [[ -z "${seen_dim[$d]:-}" ]] && seen_dim["$d"]="$output"
-        done
+        seen_container_hash["$filehash"]="$output"
+        seen_container_sig["$size_sig"]="$output"
 
         renamed=$((renamed + 1))
         ok "Renamed: $f  →  $output  (frames: $sizelist)"
