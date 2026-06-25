@@ -1,1 +1,1 @@
-- Images - [click here](./images.md)
+- Images - [click here](/assets/images/images.md)
