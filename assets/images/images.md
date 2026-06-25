@@ -2,7 +2,7 @@
 
 ## Folder: [assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]](/assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]/)
 
-This folder contains logo assets in multiple sizes and formats for branding and app icons.
+This folder contains logo assets in multiple sizes and formats.
 
 | Asset | Preview | Size | Format | Public Link | Local Link |
 |---|---|---:|---|---|---|
