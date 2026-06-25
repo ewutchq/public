@@ -2,6 +2,8 @@
 
 ## Folder: [assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]](/assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]/)
 
+This folder contains logo assets in multiple sizes and formats for branding and app icons.
+
 | Asset | Preview | Size | Format | Public Link | Local Link |
 |---|---|---:|---|---|---|
 | Logo EWUTC | <img src="https://github.com/user-attachments/assets/bc8541f6-9f50-4338-819d-5382d22390fa" alt="logo-ewutc-[32x32].png" style="height: 48px; width: auto;"> | 32×32 | PNG | [https://github.com/user-attachments/assets/bc8541f6-9f50-4338-819d-5382d22390fa](https://github.com/user-attachments/assets/bc8541f6-9f50-4338-819d-5382d22390fa) | [logo-ewutc-[32x32].png](/assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]/logo-ewutc-[32x32].png) |
@@ -63,4 +65,12 @@
 | Logo EWUTC | <img src="https://github.com/user-attachments/assets/2cdefd05-cc92-4507-b7ac-02da04690981" alt="logo-ewutc-[36x36].png" style="height: 48px; width: auto;"> | 36×36 | PNG | [https://github.com/user-attachments/assets/2cdefd05-cc92-4507-b7ac-02da04690981](https://github.com/user-attachments/assets/2cdefd05-cc92-4507-b7ac-02da04690981) | [logo-ewutc-[36x36].png](/assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]/logo-ewutc-[36x36].png) |
 | Logo EWUTC | N/A | 16×16, 32×32, 48×48, 64×64, 128×128 | ICO | N/A | [logo-ewutc-[16x16,32x32,48x48,64x64,128x128].ico](/assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]/logo-ewutc-[16x16,32x32,48x48,64x64,128x128].ico) |
 | Logo EWUTC | N/A | 16×16 | ICO | N/A | [logo-ewutc-[16x16].ico](/assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]/logo-ewutc-[16x16].ico) |
+
+## Folder: [assets/images/internal/graphics/ui](/assets/images/internal/graphics/ui/)
+
+This folder contains UI-related graphics, including banners and other interface assets.
+
+| Asset | Preview | Size | Format | Public Link | Local Link |
+|---|---|---:|---|---|---|
+| GitHub Header Banner | <img src="https://github.com/user-attachments/assets/2eb8dedd-8875-45be-aaba-69b6454c4216" alt="github-header-banner-org.png" style="height: 48px; width: auto;"> | 1700×460 | PNG | [https://github.com/user-attachments/assets/2eb8dedd-8875-45be-aaba-69b6454c4216](https://github.com/user-attachments/assets/2eb8dedd-8875-45be-aaba-69b6454c4216) | [github-header-banner-org.png](/assets/images/internal/graphics/ui/github-header-banner-org.png) |
 
