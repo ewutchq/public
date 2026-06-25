@@ -72,4 +72,4 @@ This folder contains UI-related graphics, and other interface assets.
 
 | Asset | Preview | Size | Format | Public Link | Local Link |
 |---|---|---:|---|---|---|
-| GitHub Header Banner | <img src="https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7" alt="github-header-banner-org.png" style="height: 48px; width: auto;"> | 1700×460 | PNG | [https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7](https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7) | [github-header-banner-org.png](/assets/images/internal/graphics/ui/github-header-banner-org.png) |
+| GitHub Header Banner | <img src="https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7" alt="github-header-banner-org.png" style="height: 48px; width: auto;"> | 1700×460 | PNG | [https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7](https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7) | [github-header-banner-org.png](/assets/images/internal/graphics/ui/elements/github-header-banner-org.png) |
