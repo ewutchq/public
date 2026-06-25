@@ -521,15 +521,16 @@ cmd_process() {
         done
     done
 
-    # ── write manifest ──────────────────────────────────────────────────────
+    # ── write manifest (append this run to history instead of overwriting) ─
     local assets_json=""
     [[ -s "$tmp" ]] && assets_json=$(paste -sd',' "$tmp")
     py_delete "$tmp" 2>/dev/null || true
 
-    cat > "$MANIFEST" <<JSONEOF
+    local run_summary_tmp=".__asset_run_summary_$$.json"
+    local manifest_tmp=".__asset_manifest_$$.json"
+    cat > "$run_summary_tmp" <<JSONEOF
 {
-  "manifest_version": 6,
-  "script_version":   "$SCRIPT_VERSION",
+  "script_version": "$SCRIPT_VERSION",
   "generated_at":     "$(date -Iseconds)",
   "working_dir":      "$(pwd)",
   "summary": {
@@ -539,10 +540,71 @@ cmd_process() {
     "deleted_dup_content": $dup_hash,
     "deleted_dup_dim":     $dup_dim,
     "skipped_unreadable":  $skipped
-  },
-  "assets": [${assets_json}]
+  }
 }
 JSONEOF
+
+    python - "$MANIFEST" "$run_summary_tmp" "$manifest_tmp" "$assets_json" <<'PY'
+import json, os, sys
+manifest_path, run_summary_path, out_path, assets_json = sys.argv[1:5]
+
+
+def read_json(path):
+    if not path or not os.path.exists(path):
+        return {}
+    try:
+        with open(path) as fh:
+            return json.load(fh)
+    except Exception:
+        return {}
+
+existing = read_json(manifest_path)
+current = read_json(run_summary_path)
+current_summary = current.get("summary", {})
+current_assets = []
+if assets_json.strip():
+    try:
+        current_assets = json.loads("[" + assets_json + "]")
+    except Exception:
+        current_assets = []
+
+prev_assets = existing.get("assets") or []
+prev_runs = existing.get("runs") or []
+if not prev_runs and existing.get("summary") is not None:
+    prev_runs = [{
+        "generated_at": existing.get("generated_at", current.get("generated_at", "unknown")),
+        "working_dir": existing.get("working_dir", current.get("working_dir", "")),
+        "summary": existing.get("summary", {}),
+        "assets": existing.get("assets") or []
+    }]
+
+cumulative = {}
+for key in ["files_scanned", "total_assets", "renamed_kept", "deleted_dup_content", "deleted_dup_dim", "skipped_unreadable"]:
+    cumulative[key] = int(existing.get("summary", {}).get(key, 0)) + int(current_summary.get(key, 0))
+
+prev_runs.append({
+    "generated_at": current.get("generated_at", "unknown"),
+    "working_dir": current.get("working_dir", ""),
+    "summary": current_summary,
+    "assets": current_assets,
+})
+
+merged = {
+    "manifest_version": existing.get("manifest_version", 6),
+    "script_version": current.get("script_version", existing.get("script_version", "6.0.0")),
+    "generated_at": current.get("generated_at", existing.get("generated_at", "unknown")),
+    "working_dir": current.get("working_dir", existing.get("working_dir", "")),
+    "summary": cumulative,
+    "runs": prev_runs,
+    "assets": prev_assets + current_assets,
+}
+
+with open(out_path, "w") as fh:
+    json.dump(merged, fh, indent=2)
+PY
+
+    mv "$manifest_tmp" "$MANIFEST"
+    py_delete "$run_summary_tmp" 2>/dev/null || true
 
     echo
     ok "Manifest written: $MANIFEST"
