@@ -86,6 +86,3 @@ This folder contains UI icons.
 | Icon LinkedIn Logo Tiny | <img src="https://github.com/user-attachments/assets/0df63e9c-8543-4ab4-89e4-01bbb806357e" alt="icon-in-logo-tiny.png" style="height: 48px; width: auto;"> | 256×256 | PNG | https://github.com/user-attachments/assets/0df63e9c-8543-4ab4-89e4-01bbb806357e | [icon-in-logo-tiny.png](/assets/images/internal/graphics/ui/icons/icon-in-logo-tiny.png) |
 | Icon Facebook Logo Tiny | <img src="https://github.com/user-attachments/assets/688d9d32-d8c1-44a4-b5a2-3cae2bf29ae7" alt="icon-fb-logo-tiny.png" style="height: 48px; width: auto;"> | 24×24 | PNG | https://github.com/user-attachments/assets/688d9d32-d8c1-44a4-b5a2-3cae2bf29ae7 | [icon-fb-logo-tiny.png](/assets/images/internal/graphics/ui/icons/icon-fb-logo-tiny.png) |
 | Icon Envelope Tiny | <img src="https://github.com/user-attachments/assets/d2d8f691-661b-4109-ad64-ce6aaa428452" alt="icon-envelope-tiny.png" style="height: 48px; width: auto;"> | 24×24 | PNG | https://github.com/user-attachments/assets/d2d8f691-661b-4109-ad64-ce6aaa428452 | [icon-envelope-tiny.png](/assets/images/internal/graphics/ui/icons/icon-envelope-tiny.png) |
-
-<img width="24" height="24" alt="icon-envelope-tiny" src="https://github.com/user-attachments/assets/d2d8f691-661b-4109-ad64-ce6aaa428452" />
-
