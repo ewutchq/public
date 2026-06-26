@@ -1,4 +1,7 @@
-# East West University Telecommunications Club (EWUTC)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/e85cb295-3733-43c4-b5a8-0ef49c9eef7d" width="100" alt="EWUTC Logo" />
+  <h1>East West University Telecommunications Club (EWUTC)</h1>
+</div>
 
 Welcome to the official public assets repository for the East West University Telecommunications Club (EWUTC).
 
@@ -23,7 +26,11 @@ EWUTC is dedicated to:
 
 - Public links are included where an asset can be hosted as a GitHub attachment.
 
----
+<br/>
+<p align="center">~•~</p>
+<br/>
 
-East West University Telecommunications Club  
-Founded in 2006 • Dhaka, Bangladesh
+<p align="center">
+  <strong>East West University Telecommunications Club</strong><br/>
+  Founded 14 April 2006 • Dhaka, Bangladesh
+</p>
