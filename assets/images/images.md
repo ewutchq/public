@@ -82,7 +82,8 @@ This folder contains UI elements and layouts.
 
 | Asset | Preview | Size | Format | Public Link | Local Link |
 |---|---|---:|---|---|---|
-| GitHub Header Banner | <img src="https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7" alt="github-header-banner-org.png" style="height: 48px; width: auto;"> | 1700×460 | PNG | [https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7](https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7) | [github-header-banner-org.png](/assets/images/internal/graphics/ui/elements/github-header-banner-org.png) |
+| GitHub Header Banner - Org | <img src="https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7" alt="github-header-banner-org.png" style="height: 48px; width: auto;"> | 1700×460 | PNG | [https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7](https://github.com/user-attachments/assets/c5061972-44a8-491f-aa8a-75d145480dd7) | [github-header-banner-org.png](/assets/images/internal/graphics/ui/elements/github-header-banner-org.png) |
+| GitHub Header Banner - Personal | <img src="https://github.com/user-attachments/assets/54a8d3ff-217b-4839-a5cc-81e0145fe9df" alt="github-header-banner-personal.png" style="height: 48px; width: auto;"> | 1700×460 | PNG | https://github.com/user-attachments/assets/54a8d3ff-217b-4839-a5cc-81e0145fe9df | [github-header-banner-personal.png](/assets/images/internal/graphics/ui/elements/github-header-banner-personal.png) |
 
 ## Folder: [assets/images/internal/graphics/ui/icons](/assets/images/internal/graphics/ui/icons/)
 
