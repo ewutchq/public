@@ -25,5 +25,5 @@ EWUTC is dedicated to:
 
 ---
 
-East West University Telecommunications Club
+East West University Telecommunications Club  
 Founded in 2006 • Dhaka, Bangladesh
