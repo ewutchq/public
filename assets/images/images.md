@@ -2,7 +2,7 @@
 
 ## Folder: [assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]](/assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]/)
 
-This folder contains logo assets in multiple sizes and formats.
+This folder contains EWUTC's logo assets in multiple sizes and formats.
 
 | Asset | Preview | Size | Format | Public Link | Local Link |
 |---|---|---:|---|---|---|
@@ -65,6 +65,16 @@ This folder contains logo assets in multiple sizes and formats.
 | Logo EWUTC | <img src="https://github.com/user-attachments/assets/2cdefd05-cc92-4507-b7ac-02da04690981" alt="logo-ewutc-[36x36].png" style="height: 48px; width: auto;"> | 36×36 | PNG | [https://github.com/user-attachments/assets/2cdefd05-cc92-4507-b7ac-02da04690981](https://github.com/user-attachments/assets/2cdefd05-cc92-4507-b7ac-02da04690981) | [logo-ewutc-[36x36].png](/assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]/logo-ewutc-[36x36].png) |
 | Logo EWUTC | N/A | 16×16, 32×32, 48×48, 64×64, 128×128 | ICO | N/A | [logo-ewutc-[16x16,32x32,48x48,64x64,128x128].ico](/assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]/logo-ewutc-[16x16,32x32,48x48,64x64,128x128].ico) |
 | Logo EWUTC | N/A | 16×16 | ICO | N/A | [logo-ewutc-[16x16].ico](/assets/images/internal/graphics/identity/logo/logo-ewutc-[wXh]/logo-ewutc-[16x16].ico) |
+
+## Folder: [assets/images/internal/graphics/identity/logo/logo-ewu-[wXh]](/assets/images/internal/graphics/identity/logo/logo-ewu-[wXh]/)
+
+This folder contains EWU's logo assets in multiple sizes and formats.
+
+| Asset | Preview | Size | Format | Public Link | Local Link |
+|---|---|---:|---|---|---|
+| East West University Logo | <img src="https://github.com/user-attachments/assets/a2ce034a-38b7-4698-bce3-83945f7ac416" alt="logo-ewu-[1000x649].jpg" style="height: 48px; width: auto;"> | 1000×649 | JPG | https://github.com/user-attachments/assets/a2ce034a-38b7-4698-bce3-83945f7ac416 | [logo-ewu-[1000x649].jpg](/assets/images/internal/graphics/identity/logo/logo-ewu-[wXh]/logo-ewu-[1000x649].jpg) |
+| East West University Logo | <img src="https://github.com/user-attachments/assets/95909db0-2a84-43d5-8743-18f19e52b70a" alt="logo-ewu-[1000x649].png" style="height: 48px; width: auto;"> | 1000×649 | PNG | https://github.com/user-attachments/assets/95909db0-2a84-43d5-8743-18f19e52b70a | [logo-ewu-[1000x649].png](/assets/images/internal/graphics/identity/logo/logo-ewu-[wXh]/logo-ewu-[1000x649].png) |
+
 
 ## Folder: [assets/images/internal/graphics/ui/elements](/assets/images/internal/graphics/ui/elements/)
 
